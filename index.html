@@ -3,25 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elia Carollo - GitHub Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            font-size: 18px;
-            color: #555;
-        }
-    </style>
+    <title>Disastro di Chernobyl</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Ciao, sono Elia Carollo!</h1>
-    <p>Benvenuto sulla mia pagina GitHub.</p>
+    <header>
+        <h1>Il disastro di Chernobyl</h1>
+    </header>
+    <section class="content">
+        <div class="container">
+            <h2>Introduzione</h2>
+            <p>Il 26 aprile 1986, il reattore numero 4 della centrale nucleare di Chernobyl esplose, causando uno dei peggiori disastri nucleari della storia. La catastrofe ebbe conseguenze devastanti non solo per l'area circostante, ma anche per tutta l'Europa a causa della dispersione delle radiazioni.</p>
+            <div class="image-container fade-in">
+                <img src="chernobyl_1986.jpg" alt="Chernobyl nel 1986">
+            </div>
+        </div>
+    </section>
+    <section class="content">
+        <div class="container">
+            <h2>Le cause dell'incidente</h2>
+            <p>L'incidente fu causato da un test di sicurezza mal eseguito e da errori umani, aggravati da difetti nel design del reattore RBMK. Durante il test, i tecnici disattivarono i sistemi di sicurezza e portarono il reattore in una condizione instabile. Questo portò a un aumento incontrollato della reazione nucleare, culminando in una potente esplosione.</p>
+        </div>
+    </section>
+    <section class="content">
+        <div class="container">
+            <h2>Le conseguenze immediate</h2>
+            <p>L'esplosione rilasciò una grande quantità di radiazioni nell'atmosfera. Gli abitanti della vicina città di Pripyat non furono informati immediatamente e furono evacuati solo il giorno successivo, quando ormai l'esposizione era già stata elevata.</p>
+            <div class="image-container fade-in">
+                <img src="pripyat_evacuazione.jpg" alt="Evacuazione di Pripyat">
+            </div>
+        </div>
+    </section>
+    <section class="content">
+        <div class="container">
+            <h2>Gli effetti a lungo termine</h2>
+            <p>Le radiazioni contaminarono vaste aree, rendendole inabitabili per decenni. Molti soccorritori, noti come "liquidatori", furono esposti a dosi letali di radiazioni mentre cercavano di contenere il disastro. Gli effetti sulla salute includono un aumento dei casi di cancro alla tiroide e altre malattie legate alle radiazioni.</p>
+        </div>
+    </section>
+    <section class="content">
+        <div class="container">
+            <h2>La situazione oggi</h2>
+            <p>Oggi Chernobyl è una zona di esclusione, ma attira ricercatori e turisti affascinati dalla sua storia e dal potere della natura di rigenerarsi. La fauna selvatica ha ripopolato l'area e le strutture in rovina offrono uno scenario post-apocalittico.</p>
+            <div class="image-container fade-in">
+                <img src="chernobyl_oggi.jpg" alt="Chernobyl oggi">
+            </div>
+        </div>
+    </section>
+    <section class="content">
+        <div class="container">
+            <h2>Il nuovo sarcofago</h2>
+            <p>Per contenere ulteriori fughe radioattive, nel 2016 è stato completato un nuovo sarcofago, noto come "New Safe Confinement", progettato per sigillare il reattore distrutto per i prossimi 100 anni.</p>
+            <div class="image-container fade-in">
+                <img src="sarcofago_chernobyl.jpg" alt="Nuovo sarcofago di Chernobyl">
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener("scroll", function() {
+            let elements = document.querySelectorAll(".fade-in");
+            elements.forEach(element => {
+                let position = element.getBoundingClientRect().top;
+                let screenPosition = window.innerHeight / 1.3;
+                if (position < screenPosition) {
+                    element.classList.add("visible");
+                }
+            });
+        });
+    </script>
 </body>
 </html>
