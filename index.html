@@ -3,25 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elia Carollo - GitHub Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            font-size: 18px;
-            color: #555;
-        }
-    </style>
+    <title>Disastro di Chernobyl</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let elements = document.querySelectorAll(".fade-in");
+            let observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
 </head>
 <body>
-    <h1>Ciao, sono Elia Carollo!</h1>
-    <p>Benvenuto sulla mia pagina GitHub.</p>
+    <header>
+        <h1>Il Disastro di Chernobyl</h1>
+        <p>Una tragedia nucleare che ha segnato la storia</p>
+    </header>
+    
+    <div class="container">
+        <p class="fade-in">Il 26 aprile 1986, il reattore numero 4 della centrale nucleare di Chernobyl esplose durante un test di sicurezza mal gestito...</p>
+        
+        <div class="image-section fade-in">
+            <img src="chernobyl_1986.jpg" alt="Chernobyl 1986">
+            <p class="caption">Chernobyl subito dopo l'esplosione nel 1986.</p>
+        </div>
+        
+        <p class="fade-in">Le autorità sovietiche tentarono inizialmente di minimizzare l'incidente...</p>
+        
+        <div class="image-section fade-in">
+            <img src="chernobyl_2000.jpg" alt="Chernobyl anni 2000">
+            <p class="caption">L'area di Chernobyl negli anni 2000, segnata dal degrado e dall'abbandono.</p>
+        </div>
+        
+        <p class="fade-in">Negli anni successivi, si è cercato di contenere la radioattività...</p>
+        
+        <div class="image-section fade-in">
+            <img src="chernobyl_today.jpg" alt="Chernobyl oggi">
+            <p class="caption">Chernobyl oggi, un luogo spettrale ma visitabile dai turisti.</p>
+        </div>
+    </div>
 </body>
 </html>
