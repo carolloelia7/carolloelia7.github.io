@@ -1,96 +1,119 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chernobyl: Storia, Impatto e Lezioni</title>
-    <link rel="stylesheet" href="styles.css">
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            let elements = document.querySelectorAll(".fade-in");
-            let observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("visible");
-                    }
-                });
-            }, { threshold: 0.3 });
-
-            elements.forEach(element => observer.observe(element));
-        });
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chernobyl: Storia e Impatto</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="#intro">Introduzione</a></li>
-            <li><a href="#accaduto">Cosa è successo</a></li>
-            <li><a href="#impatto">Impatto</a></li>
-            <li><a href="#oggi">Chernobyl oggi</a></li>
-            <li><a href="#riflessioni">Riflessioni</a></li>
-        </ul>
-    </nav>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#intro">Introduzione</a></li>
+      <li><a href="#accaduto">Evento</a></li>
+      <li><a href="#impatto">Impatto</a></li>
+      <li><a href="#oggi">Oggi</a></li>
+      <li><a href="#riflessioni">Riflessioni</a></li>
+    </ul>
+    <select id="language-selector">
+      <option value="it">🇮🇹 Italiano</option>
+      <option value="en">🇬🇧 English</option>
+    </select>
+  </nav>
 
-    <header class="hero-section">
-        <h1 class="fade-in">Chernobyl: La tragedia nucleare del XX secolo</h1>
-        <p class="fade-in">Un'esplosione che ha cambiato il mondo e le nostre coscienze</p>
-    </header>
+  <!-- Hero -->
+  <header class="hero-section fade-in">
+    <h1 data-it="Chernobyl: La tragedia nucleare del XX secolo"
+        data-en="Chernobyl: The Nuclear Tragedy of the 20th Century">
+      Chernobyl: La tragedia nucleare del XX secolo
+    </h1>
+    <p data-it="Un'esplosione che ha cambiato il mondo e le nostre coscienze"
+       data-en="An explosion that changed the world and our awareness">
+      Un'esplosione che ha cambiato il mondo e le nostre coscienze
+    </p>
+  </header>
 
-    <section id="intro" class="content-section fade-in">
-        <h2>Introduzione</h2>
-        <p>
-            Il disastro di Chernobyl è considerato uno dei peggiori incidenti nucleari della storia umana. Avvenuto il 26 aprile 1986 presso la centrale nucleare Lenin, vicino alla città di Pripyat, ha lasciato cicatrici profonde nella memoria collettiva e nell’ambiente.
+  <!-- Slider -->
+  <section class="slider-section fade-in">
+    <div class="slider-container">
+      <div class="slide active">
+        <img src="chernobyl_1986.jpg" alt="Chernobyl 1986">
+        <p class="caption" data-it="Chernobyl subito dopo l'esplosione."
+                         data-en="Chernobyl shortly after the explosion.">
+          Chernobyl subito dopo l'esplosione.
         </p>
-        <p>
-            L'incidente non fu solo un evento tecnico: fu il risultato di una combinazione di errori umani, difetti strutturali e una cultura di segretezza che dominava l'Unione Sovietica dell’epoca.
+      </div>
+      <div class="slide">
+        <img src="chernobyl_liquidators.jpg" alt="Liquidatori">
+        <p class="caption" data-it="I liquidatori in azione sul reattore 4."
+                         data-en="The liquidators working on reactor 4.">
+          I liquidatori in azione sul reattore 4.
         </p>
-    </section>
+      </div>
+      <div class="slide">
+        <img src="chernobyl_today.jpg" alt="Chernobyl oggi">
+        <p class="caption" data-it="Chernobyl oggi, meta turistica."
+                         data-en="Chernobyl today, a tourist site.">
+          Chernobyl oggi, meta turistica.
+        </p>
+      </div>
+    </div>
+    <button class="slider-btn prev">&#10094;</button>
+    <button class="slider-btn next">&#10095;</button>
+  </section>
 
-    <section id="accaduto" class="content-section fade-in">
-        <h2>Cosa è successo</h2>
-        <img src="chernobyl_explosion.jpg" alt="Esplosione Chernobyl" class="responsive-img">
-        <p>
-            Il reattore numero 4 esplose durante un test tecnico mal gestito. Gli operatori, violando diversi protocolli di sicurezza, abbassarono eccessivamente la potenza del reattore e disabilitarono i sistemi di sicurezza automatici. Il risultato fu una reazione incontrollata e, infine, l'esplosione.
-        </p>
-        <p>
-            A seguito dell'incidente, una nube radioattiva si diffuse in Europa, causando paura e contaminazione in diversi paesi. Le autorità sovietiche, inizialmente, cercarono di insabbiare l'accaduto.
-        </p>
-    </section>
+  <!-- Sezioni contenuto -->
+  <section id="intro" class="content-section fade-in">
+    <h2 data-it="Introduzione" data-en="Introduction">Introduzione</h2>
+    <p data-it="Il disastro di Chernobyl è uno degli eventi più gravi della storia..."
+       data-en="The Chernobyl disaster is one of the most severe events in modern history...">
+      Il disastro di Chernobyl è uno degli eventi più gravi della storia...
+    </p>
+  </section>
 
-    <section id="impatto" class="content-section fade-in">
-        <h2>Impatto e conseguenze</h2>
-        <img src="chernobyl_liquidators.jpg" alt="Liquidatori al lavoro" class="responsive-img">
-        <p>
-            Circa 600.000 persone, tra cui i famosi "liquidatori", furono coinvolte nelle operazioni di emergenza, contenimento e bonifica. Molti di loro furono esposti a dosi letali di radiazioni.
-        </p>
-        <p>
-            Le conseguenze sulla salute umana sono ancora dibattute: migliaia di casi di tumore alla tiroide, disturbi neurologici e malformazioni congenite sono stati collegati all’esposizione. L’area attorno a Chernobyl, in un raggio di 30 km, è ancora oggi una "zona di esclusione".
-        </p>
-    </section>
+  <!-- Puoi continuare le altre sezioni con lo stesso schema -->
 
-    <section id="oggi" class="content-section fade-in">
-        <h2>Chernobyl oggi</h2>
-        <img src="chernobyl_tourism.jpg" alt="Turismo a Chernobyl oggi" class="responsive-img">
-        <p>
-            Oggi Chernobyl è diventata un luogo simbolico. Grazie a visite guidate controllate, migliaia di turisti vi si recano ogni anno per vedere con i propri occhi ciò che resta dell'evento. La natura, nel frattempo, ha iniziato a riprendersi spazi, creando un contrasto inquietante tra rovina e rinascita.
-        </p>
-        <p>
-            La nuova struttura di contenimento, completata nel 2016, copre il vecchio sarcofago e dovrebbe durare almeno 100 anni. Tuttavia, la sfida del decommissioning e dello smaltimento delle scorie radioattive resta aperta.
-        </p>
-    </section>
+  <footer class="footer">
+    <p>&copy; 2025 - Chernobyl: Storia e Impatto</p>
+  </footer>
 
-    <section id="riflessioni" class="content-section fade-in">
-        <h2>Riflessioni finali</h2>
-        <p>
-            Chernobyl ci ricorda quanto siano fragili i sistemi complessi e quanto siano importanti la trasparenza, la formazione e la responsabilità. È un monito per ogni tecnologia che gestiamo e per ogni rischio che sottovalutiamo.
-        </p>
-        <p>
-            Parlare di Chernobyl non è solo guardare al passato, ma anche riflettere sul futuro dell'energia, della sicurezza e del rapporto tra uomo e tecnologia.
-        </p>
-    </section>
+  <!-- Script -->
+  <script>
+    // Fade-in
+    document.addEventListener("DOMContentLoaded", function () {
+      const elements = document.querySelectorAll(".fade-in");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) entry.target.classList.add("visible");
+        });
+      }, { threshold: 0.3 });
 
-    <footer class="footer">
-        <p>&copy; 2025 - Chernobyl: Storia e Impatto. Tutti i diritti riservati.</p>
-    </footer>
+      elements.forEach((el) => observer.observe(el));
+    });
+
+    // Lingua
+    document.getElementById("language-selector").addEventListener("change", function () {
+      const lang = this.value;
+      document.querySelectorAll("[data-it]").forEach(el => {
+        el.innerText = el.getAttribute(`data-${lang}`);
+      });
+    });
+
+    // Slider
+    let current = 0;
+    const slides = document.querySelectorAll(".slide");
+    const showSlide = (index) => {
+      slides.forEach((s, i) => s.classList.toggle("active", i === index));
+    };
+    document.querySelector(".prev").addEventListener("click", () => {
+      current = (current - 1 + slides.length) % slides.length;
+      showSlide(current);
+    });
+    document.querySelector(".next").addEventListener("click", () => {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    });
+  </script>
 </body>
 </html>
