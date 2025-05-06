@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Disastro di Chernobyl</title>
+    <title>Chernobyl: Storia, Impatto e Lezioni</title>
     <link rel="stylesheet" href="styles.css">
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -14,53 +14,83 @@
                         entry.target.classList.add("visible");
                     }
                 });
-            }, { threshold: 0.5 });
-            
-            elements.forEach(element => {
-                observer.observe(element);
-            });
+            }, { threshold: 0.3 });
+
+            elements.forEach(element => observer.observe(element));
         });
     </script>
 </head>
 <body>
-    <header>
-        <h1>Il Disastro di Chernobyl</h1>
-        <p>Una tragedia nucleare che ha segnato la storia e continua a influenzare il presente</p>
-    </header>
-    
-    <div class="container">
-        <p class="fade-in">Il 26 aprile 1986, il reattore numero 4 della centrale nucleare di Chernobyl, situata nell'attuale Ucraina, esplose durante un test di sicurezza mal gestito. Questo test aveva lo scopo di verificare se il reattore potesse continuare a funzionare in caso di perdita di alimentazione elettrica, ma una combinazione di errori umani e difetti di progettazione portò a un'esplosione catastrofica.</p>
-        
-        <div class="image-section fade-in">
-            <img src="chernobyl_1986.jpg" alt="Chernobyl 1986">
-            <p class="caption">Chernobyl subito dopo l'esplosione nel 1986.</p>
-        </div>
-        
-        <p class="fade-in">Le autorità sovietiche tentarono inizialmente di minimizzare l'incidente, ma la gravità della situazione divenne evidente quando i livelli di radiazione furono rilevati in altri paesi europei, come la Svezia. L'evacuazione della città di Pripyat, situata a soli 3 chilometri dalla centrale, iniziò solo 36 ore dopo l'esplosione, lasciando i residenti esposti a livelli pericolosi di radiazioni.</p>
-        
-        <div class="image-section fade-in">
-            <img src="chernobyl_2000.jpg" alt="Chernobyl anni 2000">
-            <p class="caption">L'area di Chernobyl negli anni 2000, segnata dal degrado e dall'abbandono.</p>
-        </div>
-        
-        <p class="fade-in">L'incidente rilasciò una quantità di radiazioni pari a circa 400 volte quella della bomba atomica sganciata su Hiroshima. Migliaia di persone furono coinvolte nelle operazioni di contenimento, tra cui i cosiddetti "liquidatori", che lavorarono per spegnere l'incendio, costruire un sarcofago attorno al reattore e decontaminare l'area. Molti di loro subirono gravi conseguenze per la salute a causa dell'esposizione alle radiazioni.</p>
-        
-        <div class="image-section fade-in">
-            <img src="chernobyl_today.jpg" alt="Chernobyl oggi">
-            <p class="caption">Chernobyl oggi, un luogo spettrale ma visitabile dai turisti.</p>
-        </div>
-    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#intro">Introduzione</a></li>
+            <li><a href="#accaduto">Cosa è successo</a></li>
+            <li><a href="#impatto">Impatto</a></li>
+            <li><a href="#oggi">Chernobyl oggi</a></li>
+            <li><a href="#riflessioni">Riflessioni</a></li>
+        </ul>
+    </nav>
 
-    <!-- Riflessioni personali -->
-    <section class="fade-in">
-        <h2>Le nostre riflessioni</h2>
-        <p>Riflettere su eventi come il disastro di Chernobyl ci fa capire quanto siano delicate le tecnologie che usiamo ogni giorno. Anche se non siamo esperti, ci ha colpito quanto una singola decisione possa avere conseguenze enormi.</p>
-        <p>Parlandone insieme, ci siamo resi conto che è facile dare per scontata la sicurezza, ma episodi come questo ci ricordano quanto sia importante informarsi e non dimenticare gli errori del passato.</p>
+    <header class="hero-section">
+        <h1 class="fade-in">Chernobyl: La tragedia nucleare del XX secolo</h1>
+        <p class="fade-in">Un'esplosione che ha cambiato il mondo e le nostre coscienze</p>
+    </header>
+
+    <section id="intro" class="content-section fade-in">
+        <h2>Introduzione</h2>
+        <p>
+            Il disastro di Chernobyl è considerato uno dei peggiori incidenti nucleari della storia umana. Avvenuto il 26 aprile 1986 presso la centrale nucleare Lenin, vicino alla città di Pripyat, ha lasciato cicatrici profonde nella memoria collettiva e nell’ambiente.
+        </p>
+        <p>
+            L'incidente non fu solo un evento tecnico: fu il risultato di una combinazione di errori umani, difetti strutturali e una cultura di segretezza che dominava l'Unione Sovietica dell’epoca.
+        </p>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 - Informazioni sul disastro di Chernobyl. Tutti i diritti riservati.</p>
+    <section id="accaduto" class="content-section fade-in">
+        <h2>Cosa è successo</h2>
+        <img src="chernobyl_explosion.jpg" alt="Esplosione Chernobyl" class="responsive-img">
+        <p>
+            Il reattore numero 4 esplose durante un test tecnico mal gestito. Gli operatori, violando diversi protocolli di sicurezza, abbassarono eccessivamente la potenza del reattore e disabilitarono i sistemi di sicurezza automatici. Il risultato fu una reazione incontrollata e, infine, l'esplosione.
+        </p>
+        <p>
+            A seguito dell'incidente, una nube radioattiva si diffuse in Europa, causando paura e contaminazione in diversi paesi. Le autorità sovietiche, inizialmente, cercarono di insabbiare l'accaduto.
+        </p>
+    </section>
+
+    <section id="impatto" class="content-section fade-in">
+        <h2>Impatto e conseguenze</h2>
+        <img src="chernobyl_liquidators.jpg" alt="Liquidatori al lavoro" class="responsive-img">
+        <p>
+            Circa 600.000 persone, tra cui i famosi "liquidatori", furono coinvolte nelle operazioni di emergenza, contenimento e bonifica. Molti di loro furono esposti a dosi letali di radiazioni.
+        </p>
+        <p>
+            Le conseguenze sulla salute umana sono ancora dibattute: migliaia di casi di tumore alla tiroide, disturbi neurologici e malformazioni congenite sono stati collegati all’esposizione. L’area attorno a Chernobyl, in un raggio di 30 km, è ancora oggi una "zona di esclusione".
+        </p>
+    </section>
+
+    <section id="oggi" class="content-section fade-in">
+        <h2>Chernobyl oggi</h2>
+        <img src="chernobyl_tourism.jpg" alt="Turismo a Chernobyl oggi" class="responsive-img">
+        <p>
+            Oggi Chernobyl è diventata un luogo simbolico. Grazie a visite guidate controllate, migliaia di turisti vi si recano ogni anno per vedere con i propri occhi ciò che resta dell'evento. La natura, nel frattempo, ha iniziato a riprendersi spazi, creando un contrasto inquietante tra rovina e rinascita.
+        </p>
+        <p>
+            La nuova struttura di contenimento, completata nel 2016, copre il vecchio sarcofago e dovrebbe durare almeno 100 anni. Tuttavia, la sfida del decommissioning e dello smaltimento delle scorie radioattive resta aperta.
+        </p>
+    </section>
+
+    <section id="riflessioni" class="content-section fade-in">
+        <h2>Riflessioni finali</h2>
+        <p>
+            Chernobyl ci ricorda quanto siano fragili i sistemi complessi e quanto siano importanti la trasparenza, la formazione e la responsabilità. È un monito per ogni tecnologia che gestiamo e per ogni rischio che sottovalutiamo.
+        </p>
+        <p>
+            Parlare di Chernobyl non è solo guardare al passato, ma anche riflettere sul futuro dell'energia, della sicurezza e del rapporto tra uomo e tecnologia.
+        </p>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 - Chernobyl: Storia e Impatto. Tutti i diritti riservati.</p>
     </footer>
 </body>
 </html>
