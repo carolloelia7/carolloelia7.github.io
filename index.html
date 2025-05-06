@@ -7,14 +7,12 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navbar -->
   <nav class="navbar">
     <ul>
-      <li><a href="#intro">Introduzione</a></li>
-      <li><a href="#accaduto">Evento</a></li>
-      <li><a href="#impatto">Impatto</a></li>
-      <li><a href="#oggi">Oggi</a></li>
-      <li><a href="#riflessioni">Riflessioni</a></li>
+      <li><a href="#intro" data-it="Introduzione" data-en="Introduction">Introduzione</a></li>
+      <li><a href="#timeline" data-it="Cronologia" data-en="Timeline">Cronologia</a></li>
+      <li><a href="#oggi" data-it="Oggi" data-en="Today">Oggi</a></li>
+      <li><a href="#riflessioni" data-it="Riflessioni" data-en="Reflections">Riflessioni</a></li>
     </ul>
     <select id="language-selector">
       <option value="it">🇮🇹 Italiano</option>
@@ -22,97 +20,151 @@
     </select>
   </nav>
 
-  <!-- Hero -->
   <header class="hero-section fade-in">
-    <h1 data-it="Chernobyl: La tragedia nucleare del XX secolo"
-        data-en="Chernobyl: The Nuclear Tragedy of the 20th Century">
-      Chernobyl: La tragedia nucleare del XX secolo
-    </h1>
-    <p data-it="Un'esplosione che ha cambiato il mondo e le nostre coscienze"
-       data-en="An explosion that changed the world and our awareness">
-      Un'esplosione che ha cambiato il mondo e le nostre coscienze
-    </p>
+    <h1 data-it="Chernobyl: La tragedia nucleare del XX secolo" data-en="Chernobyl: The Nuclear Tragedy of the 20th Century">Chernobyl: La tragedia nucleare del XX secolo</h1>
+    <p data-it="Un'esplosione che ha cambiato il mondo e le nostre coscienze" data-en="An explosion that changed the world and our awareness">Un'esplosione che ha cambiato il mondo e le nostre coscienze</p>
   </header>
 
-  <!-- Slider -->
   <section class="slider-section fade-in">
     <div class="slider-container">
       <div class="slide active">
-        <img src="chernobyl_1986.jpg" alt="Chernobyl 1986">
-        <p class="caption" data-it="Chernobyl subito dopo l'esplosione."
-                         data-en="Chernobyl shortly after the explosion.">
-          Chernobyl subito dopo l'esplosione.
-        </p>
+        <img src="foto/1986-04-29-00_00_1986-04-29-23_59_Landsat_4-5_TM_L2_True_color.jpg" alt="Chernobyl 1986" />
+        <p class="caption" data-it="Chernobyl subito dopo l'esplosione." data-en="Chernobyl shortly after the explosion.">Chernobyl subito dopo l'esplosione.</p>
       </div>
       <div class="slide">
-        <img src="chernobyl_liquidators.jpg" alt="Liquidatori">
-        <p class="caption" data-it="I liquidatori in azione sul reattore 4."
-                         data-en="The liquidators working on reactor 4.">
-          I liquidatori in azione sul reattore 4.
-        </p>
+        <img src="foto/2000-05-05-00_00_2000-05-05-23_59_Landsat_4-5_TM_L2_True_color.jpg" alt="Chernobyl 2000" />
+        <p class="caption" data-it="L'area contaminata negli anni 2000." data-en="The contaminated area in the 2000s.">L'area contaminata negli anni 2000.</p>
       </div>
       <div class="slide">
-        <img src="chernobyl_today.jpg" alt="Chernobyl oggi">
-        <p class="caption" data-it="Chernobyl oggi, meta turistica."
-                         data-en="Chernobyl today, a tourist site.">
-          Chernobyl oggi, meta turistica.
-        </p>
+        <img src="foto/Immagine 2025-04-22 195316.png" alt="Chernobyl oggi" />
+        <p class="caption" data-it="Chernobyl oggi, visitabile dai turisti." data-en="Chernobyl today, accessible to tourists.">Chernobyl oggi, visitabile dai turisti.</p>
       </div>
     </div>
-    <button class="slider-btn prev">&#10094;</button>
-    <button class="slider-btn next">&#10095;</button>
+    <button class="slider-btn prev" data-it="Precedente" data-en="Previous">&#10094;</button>
+    <button class="slider-btn next" data-it="Successivo" data-en="Next">&#10095;</button>
   </section>
 
-  <!-- Sezioni contenuto -->
   <section id="intro" class="content-section fade-in">
     <h2 data-it="Introduzione" data-en="Introduction">Introduzione</h2>
-    <p data-it="Il disastro di Chernobyl è uno degli eventi più gravi della storia..."
-       data-en="The Chernobyl disaster is one of the most severe events in modern history...">
-      Il disastro di Chernobyl è uno degli eventi più gravi della storia...
-    </p>
+    <p data-it="Il disastro di Chernobyl del 1986 è stato uno degli incidenti nucleari più catastrofici della storia. Situata vicino alla città di Pripyat, in Ucraina, la centrale nucleare di Chernobyl esplose durante un test di sicurezza mal eseguito, liberando nell'atmosfera una quantità enorme di materiale radioattivo. Le conseguenze dell'incidente furono devastanti, sia per l'ambiente che per la salute umana, con impatti a lungo termine ancora oggi visibili." data-en="The Chernobyl disaster of 1986 was one of the most catastrophic nuclear accidents in history. Located near the city of Pripyat, Ukraine, the Chernobyl nuclear plant exploded during a poorly executed safety test, releasing a vast amount of radioactive material into the atmosphere. The consequences of the disaster were devastating, both for the environment and human health, with long-term impacts still visible today.">Il disastro di Chernobyl del 1986 è stato uno degli incidenti nucleari più catastrofici della storia. Situata vicino alla città di Pripyat, in Ucraina, la centrale nucleare di Chernobyl esplose durante un test di sicurezza mal eseguito, liberando nell'atmosfera una quantità enorme di materiale radioattivo. Le conseguenze dell'incidente furono devastanti, sia per l'ambiente che per la salute umana, con impatti a lungo termine ancora oggi visibili.</p>
   </section>
 
-  <!-- Puoi continuare le altre sezioni con lo stesso schema -->
+  <!-- Timeline -->
+  <section id="timeline" class="content-section fade-in">
+    <h2 data-it="Cronologia" data-en="Timeline">Cronologia</h2>
+    <div class="timeline">
+      <div class="timeline-event">
+        <div class="event-content">
+          <h3 data-it="26 Aprile 1986" data-en="April 26, 1986">26 Aprile 1986</h3>
+          <p data-it="Esplosione del reattore 4 durante un test di sicurezza. Inizia il rilascio di radiazioni." data-en="Explosion of Reactor 4 during a safety test. Radiation release begins.">Esplosione del reattore 4 durante un test di sicurezza. Inizia il rilascio di radiazioni.</p>
+        </div>
+      </div>
+      <div class="timeline-event">
+        <div class="event-content">
+          <h3 data-it="27 Aprile 1986" data-en="April 27, 1986">27 Aprile 1986</h3>
+          <p data-it="Evacuazione di Pripyat, la città più vicina alla centrale, con oltre 49.000 abitanti." data-en="Evacuation of Pripyat, the closest city to the plant, with over 49,000 inhabitants.">Evacuazione di Pripyat, la città più vicina alla centrale, con oltre 49.000 abitanti.</p>
+        </div>
+      </div>
+      <div class="timeline-event">
+        <div class="event-content">
+          <h3 data-it="Maggio 1986" data-en="May 1986">Maggio 1986</h3>
+          <p data-it="Inizio dei lavori per costruire un sarcofago attorno al reattore danneggiato." data-en="Start of work to build a sarcophagus around the damaged reactor.">Inizio dei lavori per costruire un sarcofago attorno al reattore danneggiato.</p>
+        </div>
+      </div>
+      <div class="timeline-event">
+        <div class="event-content">
+          <h3 data-it="Anni '90 - 2000" data-en="1990s - 2000s">Anni '90 - 2000</h3>
+          <p data-it="L'area viene dichiarata zona di esclusione. Gli studi sugli effetti delle radiazioni continuano." data-en="The area is declared an exclusion zone. Studies on radiation effects continue.">L'area viene dichiarata zona di esclusione. Gli studi sugli effetti delle radiazioni continuano.</p>
+        </div>
+      </div>
+      <div class="timeline-event">
+        <div class="event-content">
+          <h3 data-it="2016" data-en="2016">2016</h3>
+          <p data-it="Inaugurazione del nuovo sarcofago di contenimento, progettato per durare almeno 100 anni." data-en="Inauguration of the new containment sarcophagus, designed to last at least 100 years.">Inaugurazione del nuovo sarcofago di contenimento, progettato per durare almeno 100 anni.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="oggi" class="content-section fade-in">
+    <h2 data-it="Com'è oggi Chernobyl?" data-en="What is Chernobyl like today?">Com'è oggi Chernobyl?</h2>
+    <p data-it="Oggi la zona di esclusione di Chernobyl è in parte accessibile ai turisti, accompagnati da guide autorizzate. Molti edifici restano abbandonati, testimoni silenziosi di una tragedia ancora viva nella memoria collettiva. La natura ha lentamente ripreso possesso dell'area, con una fauna sorprendentemente ricca nonostante le radiazioni residue. Chernobyl è diventata anche un simbolo di riflessione sull'uso responsabile dell'energia e della tecnologia." data-en="Today, the Chernobyl exclusion zone is partially accessible to tourists, guided by authorized guides. Many buildings remain abandoned, silent witnesses to a tragedy still alive in the collective memory. Nature has slowly reclaimed the area, with surprisingly rich wildlife despite the residual radiation. Chernobyl has also become a symbol of reflection on the responsible use of energy and technology.">Oggi la zona di esclusione di Chernobyl è in parte accessibile ai turisti, accompagnati da guide autorizzate. Molti edifici restano abbandonati, testimoni silenziosi di una tragedia ancora viva nella memoria collettiva. La natura ha lentamente ripreso possesso dell'area, con una fauna sorprendentemente ricca nonostante le radiazioni residue. Chernobyl è diventata anche un simbolo di riflessione sull'uso responsabile dell'energia e della tecnologia.</p>
+  </section>
+
+  <section id="riflessioni" class="content-section fade-in">
+    <h2 data-it="Riflessioni" data-en="Reflections">Riflessioni</h2>
+    <p data-it="Chernobyl rappresenta molto più di un disastro tecnico. È un monito sui pericoli dell'arroganza umana, della mancanza di trasparenza e della gestione irresponsabile di tecnologie pericolose. Ci insegna quanto sia fondamentale investire nella sicurezza, nella formazione e nell'informazione per prevenire catastrofi simili. È anche un'opportunità per ricordare i sacrifici dei 'liquidatori' e il valore della memoria storica." data-en="Chernobyl represents much more than a technical disaster. It is a warning about the dangers of human arrogance, lack of transparency, and irresponsible management of dangerous technologies. It teaches us how crucial it is to invest in safety, training, and information to prevent similar catastrophes. It is also an opportunity to remember the sacrifices of the 'liquidators' and the value of historical memory.">Chernobyl rappresenta molto più di un disastro tecnico. È un monito sui pericoli dell'arroganza umana, della mancanza di trasparenza e della gestione irresponsabile di tecnologie pericolose. Ci insegna quanto sia fondamentale investire nella sicurezza, nella formazione e nell'informazione per prevenire catastrofi simili. È anche un'opportunità per ricordare i sacrifici dei "liquidatori" e il valore della memoria storica.</p>
+  </section>
 
   <footer class="footer">
     <p>&copy; 2025 - Chernobyl: Storia e Impatto</p>
   </footer>
 
-  <!-- Script -->
   <script>
-    // Fade-in
     document.addEventListener("DOMContentLoaded", function () {
-      const elements = document.querySelectorAll(".fade-in");
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) entry.target.classList.add("visible");
+      document.querySelectorAll(".fade-in").forEach(el => {
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => entry.isIntersecting && entry.target.classList.add("visible"));
+        }, { threshold: 0.3 });
+        observer.observe(el);
+      });
+
+      document.getElementById("language-selector").addEventListener("change", function () {
+        const lang = this.value;
+        document.querySelectorAll("[data-it]").forEach(el => {
+          el.innerText = el.getAttribute(`data-${lang}`);
         });
-      }, { threshold: 0.3 });
-
-      elements.forEach((el) => observer.observe(el));
-    });
-
-    // Lingua
-    document.getElementById("language-selector").addEventListener("change", function () {
-      const lang = this.value;
-      document.querySelectorAll("[data-it]").forEach(el => {
-        el.innerText = el.getAttribute(`data-${lang}`);
       });
     });
-
-    // Slider
-    let current = 0;
-    const slides = document.querySelectorAll(".slide");
-    const showSlide = (index) => {
-      slides.forEach((s, i) => s.classList.toggle("active", i === index));
-    };
-    document.querySelector(".prev").addEventListener("click", () => {
-      current = (current - 1 + slides.length) % slides.length;
-      showSlide(current);
-    });
-    document.querySelector(".next").addEventListener("click", () => {
-      current = (current + 1) % slides.length;
-      showSlide(current);
+  </script>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Aggiungi osservatori per le animazioni di fade-in
+      document.querySelectorAll(".fade-in").forEach(el => {
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => entry.isIntersecting && entry.target.classList.add("visible"));
+        }, { threshold: 0.3 });
+        observer.observe(el);
+      });
+  
+      // Gestione del selettore della lingua
+      document.getElementById("language-selector").addEventListener("change", function () {
+        const lang = this.value;
+        document.querySelectorAll("[data-it]").forEach(el => {
+          el.innerText = el.getAttribute(`data-${lang}`);
+        });
+      });
+  
+      // Funzione per gestire il cambiamento delle slide
+      const slides = document.querySelectorAll('.slide');
+      let currentSlide = 0;
+  
+      const prevButton = document.querySelector('.prev');
+      const nextButton = document.querySelector('.next');
+  
+      function showSlide(index) {
+        // Nascondi tutte le slide
+        slides.forEach(slide => slide.classList.remove('active'));
+  
+        // Mostra la slide corrente
+        slides[index].classList.add('active');
+      }
+  
+      // Evento per il bottone "Precedente"
+      prevButton.addEventListener('click', function () {
+        currentSlide = (currentSlide === 0) ? slides.length - 1 : currentSlide - 1;
+        showSlide(currentSlide);
+      });
+  
+      // Evento per il bottone "Successivo"
+      nextButton.addEventListener('click', function () {
+        currentSlide = (currentSlide === slides.length - 1) ? 0 : currentSlide + 1;
+        showSlide(currentSlide);
+      });
+  
+      // Mostra la prima slide all'inizio
+      showSlide(currentSlide);
     });
   </script>
 </body>
